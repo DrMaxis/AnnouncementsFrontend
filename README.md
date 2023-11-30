@@ -7,7 +7,7 @@
 ## Application
 
 - Next Js v14
-- ChakraUi ^1.8.8
+- ChakraUi ^2.8
 
 ## Installation
 
