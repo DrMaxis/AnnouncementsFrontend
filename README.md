@@ -24,3 +24,5 @@
 ## Working in Development
 
 When working locally, run `yarn dev` | `npm run dev` to have nextJS automatically compile your frontend assets after each file change.
+
+- Navigate to `http://localhost:3000/` after running `yarn dev` | `npm run dev` 
