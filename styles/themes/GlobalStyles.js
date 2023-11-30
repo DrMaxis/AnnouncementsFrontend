@@ -1,4 +1,4 @@
-import { mode } from '@chakra-ui/theme-tools';
+import {mode} from '@chakra-ui/theme-tools';
 
 export const styles = {
   global: (props) => ({
@@ -86,7 +86,7 @@ export const styles = {
     strong: {
       fontWeight: "bold",
     },
-    em: { fontStyle: "italic" },
+    em: {fontStyle: "italic"},
 
     blockquote: {
       display: "block",
@@ -99,6 +99,6 @@ export const styles = {
       margin: "1.5em 10px",
       padding: "0.5em 10px 0.5em 10px",
     },
-    code: { fontFamily: "monospace" },
+    code: {fontFamily: "monospace"},
   }),
 };

@@ -8,10 +8,6 @@ async function FetchAnnouncements(req, res) {
 
     return await axios
         .get(`${process.env.NEXT_PUBLIC_API_URL}/announcements`, {
-            data: {
-                source_currency: req.body.source_currency,
-                exchanging_currency: req.body.exchanging_currency,
-            },
             headers: customHeaders,
         })
         .then((response) => {

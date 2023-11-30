@@ -1,12 +1,12 @@
-import { extendTheme } from '@chakra-ui/react';
+import {extendTheme} from '@chakra-ui/react';
 
-import { styles } from './GlobalStyles';
+import {styles} from './GlobalStyles';
 
 const config = {
-    initialColorMode: 'dark',
-    useSystemColorMode: false,
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
 };
 
 export default extendTheme(
-    styles,
+  styles,
 );
