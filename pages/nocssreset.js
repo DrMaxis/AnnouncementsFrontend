@@ -35,7 +35,6 @@ export async function getServerSideProps() {
     };
 }
 
-
 export default function Nocssreset({dynamicAnnouncements}) {
     const [staticAnnouncements, setStaticAnnouncements] = useState(announcements);
     const [currentPage, setCurrentPage] = useState(1);
@@ -50,8 +49,6 @@ export default function Nocssreset({dynamicAnnouncements}) {
         setCurrentPage(pageNumber);
     };
 
-
-
     return (
         <div className={styles.container}>
             <Head>
@@ -61,7 +58,7 @@ export default function Nocssreset({dynamicAnnouncements}) {
 
             <main className={'main-container'}>
                 <h1 className={styles.title}>
-                    GA | Announcements
+                    GA | Announcements - No Chakra Ui Resets
                 </h1>
 
                 <p className={styles.description}>

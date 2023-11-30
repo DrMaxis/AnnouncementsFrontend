@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, Stack, ButtonGroup, HStack, Box} from "@chakra-ui/react";
-import {announcements} from "../static";
+import {Button, HStack, Box} from "@chakra-ui/react";
 
 const Paginate = ({announcements, postsPerPage, totalPosts, currentPage, paginate, setCurrentPage}) => {
     const pageNumbers = [];
@@ -28,7 +27,7 @@ const Paginate = ({announcements, postsPerPage, totalPosts, currentPage, paginat
                 </Button>
                 {pageNumbers.map((number) => (
                     <Button
-                       colorScheme='teal' size='xs'
+                        colorScheme='teal' size='xs'
                         key={number}
                         onClick={() => paginate(number)}
                         className={

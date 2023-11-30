@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import {
     Flex,
     Heading,
@@ -15,11 +15,10 @@ import {
     FormHelperText,
     InputRightElement
 } from "@chakra-ui/react";
-import { FaUserAlt, FaLock } from "react-icons/fa";
+import {FaUserAlt, FaLock} from "react-icons/fa";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
-
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
@@ -40,9 +39,9 @@ const Login = () => {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Avatar bg="teal.500" />
+                <Avatar bg="teal.500"/>
                 <Heading color="teal.400">Welcome</Heading>
-                <Box minW={{ base: "90%", md: "468px" }}>
+                <Box minW={{base: "90%", md: "468px"}}>
                     <form>
                         <Stack
                             spacing={4}
@@ -54,9 +53,9 @@ const Login = () => {
                                 <InputGroup>
                                     <InputLeftElement
                                         pointerEvents="none"
-                                        children={<CFaUserAlt color="gray.300" />}
+                                        children={<CFaUserAlt color="gray.300"/>}
                                     />
-                                    <Input type="email" placeholder="email address" />
+                                    <Input type="email" placeholder="email address"/>
                                 </InputGroup>
                             </FormControl>
                             <FormControl>
@@ -64,7 +63,7 @@ const Login = () => {
                                     <InputLeftElement
                                         pointerEvents="none"
                                         color="gray.300"
-                                        children={<CFaLock color="gray.300" />}
+                                        children={<CFaLock color="gray.300"/>}
                                     />
                                     <Input
                                         type={showPassword ? "text" : "password"}

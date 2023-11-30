@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 async function FetchAnnouncements(req, res) {
 
     let customHeaders = {
@@ -16,7 +17,7 @@ async function FetchAnnouncements(req, res) {
         .then((response) => {
             return res
                 .status(200)
-                .json({ data: response.data.data, message: response.data.message });
+                .json({data: response.data.data, message: response.data.message});
         })
         .catch((e) => {
             return res.status(e.response.status).json({

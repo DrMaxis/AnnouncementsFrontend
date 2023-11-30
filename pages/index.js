@@ -20,7 +20,6 @@ import rehypeRaw from 'rehype-raw'
 import Paginate from "../components/paginate";
 import axios from "axios";
 
-
 export async function getServerSideProps() {
     const announcementRequest = await axios
         .post(getStaticPath('/api/announcements'))
@@ -34,8 +33,6 @@ export async function getServerSideProps() {
         },
     };
 }
-
-
 export default function Home({dynamicAnnouncements}) {
     const [staticAnnouncements, setStaticAnnouncements] = useState(announcements);
     const [currentPage, setCurrentPage] = useState(1);
@@ -49,8 +46,6 @@ export default function Home({dynamicAnnouncements}) {
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
     };
-
-
 
     return (
         <div className={styles.container}>
@@ -76,8 +71,6 @@ export default function Home({dynamicAnnouncements}) {
                         Markdown-it
                     </Link>
                 </Text>
-
-
                 <Tabs mt={'20'}>
                     <TabList>
                         <Tab>Static Announcements</Tab>
@@ -219,8 +212,6 @@ export default function Home({dynamicAnnouncements}) {
 
                     </TabPanels>
                 </Tabs>
-
-
             </main>
         </div>
     );
